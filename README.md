@@ -59,12 +59,32 @@ rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
 
+## Obtain GitHub Token
+
+Login to your GitHub account, click on the profile icon (in the top-right corner of the screen) and select **Settings**:
+
+![Screenshot 2023-05-23 at 16 38 24](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/e457f7db-97d0-4bf8-87b7-86696a1aa451)
+
+Scroll down to **Developer settings** -> select **Personal access tokens** -> **Tokens (Classic)**
+
+![Screenshot 2023-05-23 at 16 38 44](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/f556064e-7a38-405c-a174-d11e50543233)
+
+Click on **Generate new token** -> **Generate new token (Classic)**
+
+![Screenshot 2023-05-23 at 16 38 54](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/512f3ada-b6cc-4551-be79-fccae3d7c74f)
+
+Click on **Generate new token** -> **Generate new token (Classic)**
+
+![Screenshot 2023-05-23 at 16 39 27](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/44775734-8ba5-4de5-b099-00298b029b0b)
+
+Make sure to copy the newly generated token!
+
 ## Run Terraform Apply
 
 ```
 terraform apply
 ```
-When prompted, paste your API token and hit **Enter**, then enter **yes** and hit **Enter** again to apply:
+When prompted, paste your token and hit **Enter**, then enter **yes** and hit **Enter** again to apply:
 
 ```
 var.token
@@ -88,7 +108,7 @@ Terraform will perform the following actions:
       + archived                    = false
       + default_branch              = (known after apply)
       + delete_branch_on_merge      = false
-      + description                 = "My awesome codebase"
+      + description                 = "my awesome codebase"
       + etag                        = (known after apply)
       + full_name                   = (known after apply)
       + git_clone_url               = (known after apply)
@@ -97,7 +117,7 @@ Terraform will perform the following actions:
       + id                          = (known after apply)
       + merge_commit_message        = "PR_TITLE"
       + merge_commit_title          = "MERGE_MESSAGE"
-      + name                        = "Example"
+      + name                        = "example"
       + node_id                     = (known after apply)
       + private                     = (known after apply)
       + repo_id                     = (known after apply)
@@ -117,7 +137,7 @@ Do you want to perform these actions?
   Enter a value: yes
 
 github_repository.example: Creating...
-github_repository.example: Creation complete after 6s [id=Example]
+github_repository.example: Creation complete after 6s [id=example]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
