@@ -141,3 +141,10 @@ github_repository.example: Creation complete after 6s [id=example]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
+
+## Verify the results
+
+Navigate to your list of repositories and locate the repo: 
+
+![Screenshot 2023-05-23 at 17 01 29](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/22d6fb2d-de8f-4d2f-a91d-572d2624d5de)
+
