@@ -12,7 +12,7 @@ provider "github" {
 }
 
 resource "github_repository" "example" {
-  name        = "Example"
-  description = "My awesome codebase"
+  name        = "example"
+  description = "my awesome codebase"
   visibility = "public"
 }
