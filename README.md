@@ -9,6 +9,25 @@ Install and configure Terraform as per [official documentation](https://develope
 
 GitHub account and [API token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
 
+
+To generate token, login to your GitHub account, click on the profile icon (in the top-right corner of the screen) and select **Settings**:
+
+![Screenshot 2023-05-23 at 16 38 24](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/e457f7db-97d0-4bf8-87b7-86696a1aa451)
+
+Scroll down to **Developer settings** -> select **Personal access tokens** -> **Tokens (Classic)**
+
+![Screenshot 2023-05-23 at 16 38 44](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/f556064e-7a38-405c-a174-d11e50543233)
+
+Click on **Generate new token** -> **Generate new token (Classic)**
+
+![Screenshot 2023-05-23 at 16 38 54](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/512f3ada-b6cc-4551-be79-fccae3d7c74f)
+
+Click on **Generate new token** -> **Generate new token (Classic)**
+
+![Screenshot 2023-05-23 at 16 39 27](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/44775734-8ba5-4de5-b099-00298b029b0b)
+
+Make sure to copy the newly generated token!
+
 # How To
 
 ## Clone repository
@@ -58,26 +77,11 @@ If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
 ```
+## Run Terraform Plan
 
-## Obtain GitHub Token
-
-Login to your GitHub account, click on the profile icon (in the top-right corner of the screen) and select **Settings**:
-
-![Screenshot 2023-05-23 at 16 38 24](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/e457f7db-97d0-4bf8-87b7-86696a1aa451)
-
-Scroll down to **Developer settings** -> select **Personal access tokens** -> **Tokens (Classic)**
-
-![Screenshot 2023-05-23 at 16 38 44](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/f556064e-7a38-405c-a174-d11e50543233)
-
-Click on **Generate new token** -> **Generate new token (Classic)**
-
-![Screenshot 2023-05-23 at 16 38 54](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/512f3ada-b6cc-4551-be79-fccae3d7c74f)
-
-Click on **Generate new token** -> **Generate new token (Classic)**
-
-![Screenshot 2023-05-23 at 16 39 27](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/44775734-8ba5-4de5-b099-00298b029b0b)
-
-Make sure to copy the newly generated token!
+```
+terraform plan
+```
 
 ## Run Terraform Apply
 
@@ -142,9 +146,13 @@ github_repository.example: Creation complete after 6s [id=example]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
-## Verify the results
-
-Navigate to your list of repositories and locate the repo: 
+To verify the results, navigate to your list of repositories and locate the repo: 
 
 ![Screenshot 2023-05-23 at 17 01 29](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/22d6fb2d-de8f-4d2f-a91d-572d2624d5de)
+
+## Run Terraform Destroy
+
+```
+terraform destroy
+```
 
