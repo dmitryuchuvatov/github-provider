@@ -7,8 +7,7 @@ More information about GitHub provider and available resources is [here](https:/
 
 Install and configure Terraform as per [official documentation](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-GitHub account and [API token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token)
-
+Have GitHub token.
 
 To generate token, login to your GitHub account, click on the profile icon (in the top-right corner of the screen) and select **Settings**:
 
@@ -48,35 +47,6 @@ cd github-provider
 terraform init
 ```
 
-You should see the following output:
-
-```
-Initializing the backend...
-
-Initializing provider plugins...
-- Finding integrations/github versions matching "~> 5.0"...
-- Installing integrations/github v5.25.0...
-- Installed integrations/github v5.25.0 (signed by a HashiCorp partner, key ID 38027F80D7FD5FB2)
-
-Partner and community providers are signed by their developers.
-If you'd like to know more about provider signing, you can read about it here:
-https://www.terraform.io/docs/cli/plugins/signing.html
-
-Terraform has created a lock file .terraform.lock.hcl to record the provider
-selections it made above. Include this file in your version control repository
-so that Terraform can guarantee to make the same selections by default when
-you run "terraform init" in the future.
-
-Terraform has been successfully initialized!
-
-You may now begin working with Terraform. Try running "terraform plan" to see
-any changes that are required for your infrastructure. All Terraform commands
-should now work.
-
-If you ever set or change modules or backend configuration for Terraform,
-rerun this command to reinitialize your working directory. If you forget, other
-commands will detect it and remind you to do so if necessary.
-```
 ## Run Terraform Plan
 
 ```
@@ -148,7 +118,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 To verify the results, navigate to your list of repositories and locate the repo: 
 
-![Screenshot 2023-05-23 at 17 01 29](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/22d6fb2d-de8f-4d2f-a91d-572d2624d5de)
+![Screenshot 2023-05-30 at 09 39 43](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/c086a23a-c91e-48f5-802b-8612ee387101)
 
 ## Run Terraform Destroy
 
