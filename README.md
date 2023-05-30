@@ -5,9 +5,9 @@ More information about GitHub provider and available resources is [here](https:/
 
 # Prerequisites
 
-Install and configure Terraform as per [official documentation](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
+- Install and configure Terraform as per [official documentation](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
-Have GitHub token.
+- Have GitHub token.
 
 To generate token, login to your GitHub account, click on the profile icon (in the top-right corner of the screen) and select **Settings**:
 
@@ -116,11 +116,13 @@ github_repository.example: Creation complete after 6s [id=example]
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
 
+# Verify results
 To verify the results, navigate to your list of repositories and locate the repo: 
 
 ![Screenshot 2023-05-30 at 09 39 43](https://github.com/dmitryuchuvatov/github-provider/assets/119931089/c086a23a-c91e-48f5-802b-8612ee387101)
 
-## Run Terraform Destroy
+# Destroy the repo
+Run Terraform Destroy
 
 ```
 terraform destroy
